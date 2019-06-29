@@ -7,7 +7,7 @@ void	ft_putchar(char c)
 
 void	rotone(char *s)
 {
-	int		i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])
