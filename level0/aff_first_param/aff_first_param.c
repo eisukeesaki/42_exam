@@ -6,7 +6,7 @@
 /*   By: eesaki <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 21:37:44 by eesaki            #+#    #+#             */
-/*   Updated: 2019/06/28 21:55:17 by eesaki           ###   ########.fr       */
+/*   Updated: 2019/06/29 00:18:34 by eesaki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	ft_putchar(char c)
 
 void	aff_first_param(char **s)
 {
-	int		first;
-	int		i;
+	size_t	first;
+	size_t	i;
 
 	first = 1;
 	i = 0;
