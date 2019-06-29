@@ -6,7 +6,7 @@
 /*   By: eesaki <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 21:37:44 by eesaki            #+#    #+#             */
-/*   Updated: 2019/06/28 21:37:45 by eesaki           ###   ########.fr       */
+/*   Updated: 2019/06/28 21:55:17 by eesaki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,16 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	aff_first_param(char *s)
+void	aff_first_param(char **s)
 {
+	int		first;
 	int		i;
 
+	first = 1;
 	i = 0;
-	while (s[i])
+	while (s[first][i])
 	{
-		ft_putchar(s[i]);
+		ft_putchar(s[first][i]);
 		i++;
 	}
 }
@@ -32,7 +34,7 @@ void	aff_first_param(char *s)
 int		main(int ac, char **av)
 {
 	if (ac >= 2)
-		aff_first_param(av[1]);
+		aff_first_param(av);
 	ft_putchar('\n');
 	return (0);
 }
