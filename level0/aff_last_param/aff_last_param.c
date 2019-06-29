@@ -6,7 +6,7 @@
 /*   By: eesaki <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 21:37:44 by eesaki            #+#    #+#             */
-/*   Updated: 2019/06/28 21:50:31 by eesaki           ###   ########.fr       */
+/*   Updated: 2019/06/29 00:19:02 by eesaki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	ft_putchar(char c)
 
 void	aff_last_param(int ac, char **av)
 {
-	int		last;
-	int		i;
+	size_t	last;
+	size_t	i;
 
 	last = ac - 1;
 	i = 0;
