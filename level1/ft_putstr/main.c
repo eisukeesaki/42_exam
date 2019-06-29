@@ -1,15 +1,11 @@
+void	ft_putstr(char *str);
+
 int		main(void)
 {
-	char	s0[] = "abcdefg";
+	char	s0[] = "some string";
 	ft_putstr(s0);
-	write(1, "\n", 1);
 
-	char	s1[] = "";
-	ft_putstr(s1);
-	write(1, "\n", 1);
-
-	char	s2[] = "abcdefg 123456789";
-	ft_putstr(s2);
-
+	// char	s1[] = "";
+	// ft_putstr(s1);
 	return (0);
 }
