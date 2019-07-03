@@ -6,22 +6,22 @@
 /*   By: eesaki <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/03 01:51:34 by eesaki            #+#    #+#             */
-/*   Updated: 2019/07/03 02:53:11 by eesaki           ###   ########.fr       */
+/*   Updated: 2019/07/03 04:14:49 by eesaki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iswhitespace(char c)
+static int	ft_iswhitespace(char c)
 {
 	return (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f'
 			|| c == '\r');
 }
 
-int	ft_isdigit(int c)
+static int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
 
-int	ft_atoi(const char *str)
+int			ft_atoi(const char *str)
 {
 	int		n;
 	int		i;
