@@ -6,7 +6,7 @@
 /*   By: eesaki <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/03 01:22:30 by eesaki            #+#    #+#             */
-/*   Updated: 2019/07/03 01:27:57 by eesaki           ###   ########.fr       */
+/*   Updated: 2019/07/03 01:47:40 by eesaki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,19 @@ int		ft_strlen(char *str)
 
 char	*ft_strrev(char *str)
 {
-	int		len;
 	int		i;
+	int		len;
 	int		k;
-	char	tmp;
+	char	buff;
 
-	len = ft_strlen(str);
 	i = 0;
+	len = ft_strlen(str);
 	k = len - 1;
 	while (i < k)
 	{
-		tmp = str[i];
+		buff = str[i];
 		str[i] = str[k];
-		str[k] = tmp;
+		str[k] = buff;
 		i++;
 		k--;
 	}
